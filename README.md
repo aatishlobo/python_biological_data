@@ -21,6 +21,8 @@ In this intermediary phase, we run the command conatained in padel.sh, which cal
 
 ## Phase 4: Building, Comparing ML Models
 
-
+We split the data from the last phase into a training and test set and use the lazyregressor function from the lazypredict package to run multiple ML models on the data. After plotting the R-squared values and the RMSE values, we observe the K Neighbors Regression has the best performance on the test data, evident because it has the highest R-squared and the lowest RMSE. We then build a K Neighbors Regressor, testing values for the number of neighbors from 1 to 20. n=6 has the highest accuracy on the test data, so we create a model with n=6, fit it on the data and use the pickle package to store it in model_pkl.
 
 ## Phase 5: Deployment of Model
+
+The web app 
