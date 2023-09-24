@@ -13,7 +13,11 @@ First, we download the ChEMBL webresource client. ChEMBL is a manually curated d
 
 ## Phase 2: Data Analysis
 
+After loading the dataframe with the cleaned data from the last phase, we extract the 'canonical smiles' data into a separate datframe. Canonical smiles are a form of notation that allows us to see the atoms and bonds present in a molecule. Next, we define a function to calculate the Lipinski descriptors of the molecules in our data frame, yielding us data like the molecular weight and Hydrogen donors and acceptors of those molecules. This new data along with the canonical smiles data we used to calculate the descriptors is concatenated to the original data frame. Next, we define a function to convert our IC50 values to pIC50 values, which is the -log10 of the molecular molar weight represented by the 'standard_value' column. We do this because the pIC50 values are less variable and easier to work with because of the log function used in their calculation. We concatenate these values to the data frame and remove the standard_value column along with any entries marked as 'intermediate' for their bioactivity. We are now left with a final data frame for this phase. Finally, we run the the Mann-Whitney test for statistical significance to verify the usability of our data.
+
 ## Phase 3: Descriptor Calculation
+
+
 
 ## Phase 4: Building, Comparing ML Models
 
