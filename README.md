@@ -3,7 +3,7 @@
 ## Overview
 
 This project involves the use of Python to clean, preprocess, build machine learning models, and eventually deploy that ML model using a web app.
-This repository includes five notebooks, each containing one project phase, and app.py, which contains the web app code.
+This repository includes four notebooks, each containing one project phase, and app.py, which contains the web app code.
 
 Primary Libraries: pandas, numpy, sklearn, matplotlib, seaborn, streamlit
 
