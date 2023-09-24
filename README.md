@@ -25,4 +25,4 @@ We split the data from the last phase into a training and test set and use the l
 
 ## Phase 5: Deployment of Model
 
-The web app 
+The web app source code is contained in app.py.
