@@ -29,3 +29,13 @@ We split the data from the last phase into a training and test set and use the l
 
 The web app source code is contained in app.py. It contains a sidebar, which a user can drag and drop a text file into. This text file should contain a smiles formula followed by a ChEMBL Id for each molecule; an example file is also available for viewing. The app will generate a csv descriptor file using the padel descriptor folder and the input dat, and this data is displayed to the user.
 Next, a similar dataset is displayed from the descriptor_list_new.csv, which is a subset of sarscovid_06_bioactivitydata.csv which we generated in the previous phase. This data is displayed next to the user. Finally, the KNN model we stored last phase we created is used on the user data and the previously generated data to produced an output file, which displays the pIC50 values of the molecules contained by the input data.
+
+We run the app by executing "streamlit run app.py" on the terminal.
+
+Before prediction:
+
+<img src='screenshot1.png'>
+
+After prediction:
+
+<img src='screenshot2.png'>
